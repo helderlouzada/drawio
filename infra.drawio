@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="bzqJXb_xEaAeGkX9h9bq" name="Page-1">
-    <mxGraphModel dx="2571" dy="1351" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -97,6 +97,45 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1100" y="560" as="sourcePoint" />
             <mxPoint x="1170" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-1" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 1&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.5&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="1120" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-2" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 2&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.6&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="1120" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-3" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 3&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.7&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="1130" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-4" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 5&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.8&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="1120" y="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-6" edge="1" parent="1" source="MpZHr25DW6tOoiO8-BXw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="MpZHr25DW6tOoiO8-BXw-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950.05" y="1580.05" />
+              <mxPoint x="950.05" y="1520.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-5" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;rounded=0;textShadow=0;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" value="PostgreSQL MASTER&lt;br&gt;(Escrita)&lt;br&gt;172.22.5.4" vertex="1">
+          <mxGeometry height="60" width="60" x="770" y="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-8" edge="1" parent="1" source="MpZHr25DW6tOoiO8-BXw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.009;entryY=0.467;entryDx=0;entryDy=0;entryPerimeter=0;" target="MpZHr25DW6tOoiO8-BXw-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950.05" y="1580.05" />
+              <mxPoint x="950.05" y="1318.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MpZHr25DW6tOoiO8-BXw-9" edge="1" parent="1" source="MpZHr25DW6tOoiO8-BXw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.006;entryY=0.731;entryDx=0;entryDy=0;entryPerimeter=0;" target="MpZHr25DW6tOoiO8-BXw-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950.05" y="1580.05" />
+              <mxPoint x="950.05" y="1673.86" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
