@@ -35,7 +35,7 @@
           <mxGeometry height="60" width="60" x="1010" y="590" as="geometry" />
         </mxCell>
         <mxCell id="srv_backup" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;labelBackgroundColor=#B266FF;labelBorderColor=#3700CC;fontColor=#000000;" value="Backup BARMAN&lt;br&gt;(172.22.5.100)" vertex="1">
-          <mxGeometry height="60" width="60" x="1300" y="120" as="geometry" />
+          <mxGeometry height="60" width="60" x="1290" y="-250" as="geometry" />
         </mxCell>
         <mxCell id="db_log" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;strokeWidth=2;strokeColor=#FF3333;" value="PostgreSQL LOGS&#xa;[Particionamento Ativo]" vertex="1">
           <mxGeometry height="60" width="60" x="200" y="320" as="geometry" />
