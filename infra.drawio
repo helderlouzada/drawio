@@ -1,117 +1,102 @@
 <mxfile host="app.diagrams.net">
   <diagram id="bzqJXb_xEaAeGkX9h9bq" name="Page-1">
-    <mxGraphModel dx="2175" dy="2343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="2571" dy="1351" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="app_epp" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;labelBackgroundColor=#d5e8d4;labelBorderColor=#82b366;" value="Moodle EPP&#xa;(Azure App Service)" vertex="1">
-          <mxGeometry height="60" width="60" x="450" y="170" as="geometry" />
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--1" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Data_Factory.svg;labelBackgroundColor=#ffcccc;labelBorderColor=#36393d;" value="Azure Data Factory&#xa;(ADF - Relatórios)" vertex="1">
+          <mxGeometry height="60" width="60" x="360" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="app_ava" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;labelBackgroundColor=#d5e8d4;labelBorderColor=#82b366;" value="Moodle AVAEFAPE&#xa;(Azure App Service)" vertex="1">
-          <mxGeometry height="60" width="60" x="450" y="320" as="geometry" />
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--2" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;labelBackgroundColor=#fff2cc;labelBorderColor=#d6b656;" value="PgBouncer Escrita&#xa;(Balanceamento)" vertex="1">
+          <mxGeometry height="61" width="60" x="760" y="500" as="geometry" />
         </mxCell>
-        <mxCell id="app_exp" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;labelBackgroundColor=#d5e8d4;labelBorderColor=#82b366;" value="Moodle EXPANSÃO&#xa;(Azure App Service)" vertex="1">
-          <mxGeometry height="60" width="60" x="450" y="470" as="geometry" />
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--3" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;labelBackgroundColor=#fff2cc;labelBorderColor=#d6b656;" value="PgBouncer Leitura&#xa;(Balanceamento)" vertex="1">
+          <mxGeometry height="61" width="60" x="760" y="700" as="geometry" />
         </mxCell>
-        <mxCell id="app_adf" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Data_Factory.svg;labelBackgroundColor=#ffcccc;labelBorderColor=#36393d;" value="Azure Data Factory&#xa;(ADF - Relatórios)" vertex="1">
-          <mxGeometry height="60" width="60" x="330" y="-40" as="geometry" />
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--4" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;rounded=0;textShadow=0;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" value="PostgreSQL MASTER&lt;br&gt;(Escrita)&lt;br&gt;172.22.5.4" vertex="1">
+          <mxGeometry height="60" width="60" x="1040" y="500" as="geometry" />
         </mxCell>
-        <mxCell id="bouncer_write" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;labelBackgroundColor=#fff2cc;labelBorderColor=#d6b656;" value="PgBouncer Escrita&#xa;(Balanceamento)" vertex="1">
-          <mxGeometry height="61" width="60" x="730" y="220" as="geometry" />
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--5" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;labelBackgroundColor=#B266FF;labelBorderColor=#3700CC;fontColor=#000000;" value="Backup BARMAN&lt;br&gt;(172.22.5.100)" vertex="1">
+          <mxGeometry height="60" width="60" x="1440" y="500" as="geometry" />
         </mxCell>
-        <mxCell id="bouncer_read" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Application_Gateways.svg;labelBackgroundColor=#fff2cc;labelBorderColor=#d6b656;" value="PgBouncer Leitura&#xa;(Balanceamento)" vertex="1">
-          <mxGeometry height="61" width="60" x="730" y="420" as="geometry" />
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--6" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;strokeWidth=2;strokeColor=#FF3333;" value="PostgreSQL LOGS&#xa;[Particionamento Ativo]" vertex="1">
+          <mxGeometry height="60" width="60" x="560" y="1210" as="geometry" />
         </mxCell>
-        <mxCell id="db_master" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;rounded=0;textShadow=0;" value="PostgreSQL MASTER&lt;br&gt;(Escrita)&lt;br&gt;172.22.5.4" vertex="1">
-          <mxGeometry height="60" width="60" x="1010" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="db_rep1" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 1&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.5&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="60" x="1010" y="281" as="geometry" />
-        </mxCell>
-        <mxCell id="db_rep2" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 2&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.6&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="60" x="1010" y="421" as="geometry" />
-        </mxCell>
-        <mxCell id="db_rep3" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 3&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.7&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="60" x="1010" y="590" as="geometry" />
-        </mxCell>
-        <mxCell id="srv_backup" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;labelBackgroundColor=#B266FF;labelBorderColor=#3700CC;fontColor=#000000;" value="Backup BARMAN&lt;br&gt;(172.22.5.100)" vertex="1">
-          <mxGeometry height="60" width="60" x="1380" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="db_log" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;strokeWidth=2;strokeColor=#FF3333;" value="PostgreSQL LOGS&#xa;[Particionamento Ativo]" vertex="1">
-          <mxGeometry height="60" width="60" x="200" y="320" as="geometry" />
-        </mxCell>
-        <mxCell id="box_report" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;swimlaneFillColor=#FFFFE0;noLabel=0;backgroundOutline=1;rounded=1;" value="ISOLAMENTO DE RELATÓRIOS" vertex="1">
-          <mxGeometry height="160" width="360" x="760" y="-120" as="geometry">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--7" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;swimlaneFillColor=#FFFFE0;noLabel=0;backgroundOutline=1;rounded=1;" value="ISOLAMENTO DE RELATÓRIOS" vertex="1">
+          <mxGeometry height="160" width="360" x="790" y="160" as="geometry">
             <mxRectangle height="30" width="220" x="800" y="750" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sub_bouncer" parent="box_report" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Container_Instances.svg;labelBackgroundColor=#cce5ff;labelBorderColor=#36393d;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" value="PgBouncer Interno&#xa;(Porta 5432)" vertex="1">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--8" parent="XUB3ZXfbKG2ZV8yyBE7--7" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Container_Instances.svg;labelBackgroundColor=#cce5ff;labelBorderColor=#36393d;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" value="PgBouncer Interno&#xa;(Porta 5432)" vertex="1">
           <mxGeometry height="60" width="60" x="60" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="db_report" parent="box_report" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#cce5ff;labelBorderColor=#36393d;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" value="PostgreSQL Relatórios&lt;br&gt;(Réplica Porta 5433)&lt;br&gt;&lt;span style=&quot;font-size: 10px; background-color: rgb(218, 232, 252);&quot;&gt;172.22.5.101&lt;/span&gt;" vertex="1">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--9" parent="XUB3ZXfbKG2ZV8yyBE7--7" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#cce5ff;labelBorderColor=#36393d;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;" value="PostgreSQL Relatórios&lt;br&gt;(Réplica Porta 5433)&lt;br&gt;&lt;span style=&quot;font-size: 10px; background-color: rgb(218, 232, 252);&quot;&gt;172.22.5.101&lt;/span&gt;" vertex="1">
           <mxGeometry height="60" width="60" x="250" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="edge16" edge="1" parent="box_report" source="sub_bouncer" style="strokeColor=#3399FF;strokeWidth=2;value=Roteia 5432 para 5433;verticalLinePosition=top;" target="db_report">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--10" edge="1" parent="XUB3ZXfbKG2ZV8yyBE7--7" source="XUB3ZXfbKG2ZV8yyBE7--8" style="strokeColor=#3399FF;strokeWidth=2;value=Roteia 5432 para 5433;verticalLinePosition=top;" target="XUB3ZXfbKG2ZV8yyBE7--9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge1" edge="1" parent="1" source="app_epp" target="bouncer_write">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--11" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--19" style="exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="XUB3ZXfbKG2ZV8yyBE7--2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge2" edge="1" parent="1" source="app_epp" target="bouncer_read">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--12" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--19" style="exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="XUB3ZXfbKG2ZV8yyBE7--3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge3" edge="1" parent="1" source="app_epp" style="strokeColor=#FF3333;strokeWidth=1;dashed=1;" target="db_log">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--13" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--19" style="strokeColor=#FF3333;strokeWidth=1;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="XUB3ZXfbKG2ZV8yyBE7--6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge4" edge="1" parent="1" source="app_ava" target="bouncer_write">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--14" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--2" style="strokeWidth=2;strokeColor=#00CC66;" target="XUB3ZXfbKG2ZV8yyBE7--4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge5" edge="1" parent="1" source="app_ava" target="bouncer_read">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--15" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--4" style="strokeColor=#FF9900;strokeWidth=2;entryX=0;entryY=0.5;" target="XUB3ZXfbKG2ZV8yyBE7--5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge6" edge="1" parent="1" source="app_ava" style="strokeColor=#FF3333;strokeWidth=1;dashed=1;" target="db_log">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--16" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--1" style="strokeColor=#3399FF;strokeWidth=2;" target="XUB3ZXfbKG2ZV8yyBE7--8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge7" edge="1" parent="1" source="app_exp" target="bouncer_write">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge8" edge="1" parent="1" source="app_exp" target="bouncer_read">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge9" edge="1" parent="1" source="app_exp" style="strokeColor=#FF3333;strokeWidth=1;dashed=1;" target="db_log">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge10" edge="1" parent="1" source="bouncer_write" style="strokeWidth=2;strokeColor=#00CC66;" target="db_master">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge11" edge="1" parent="1" source="bouncer_read" target="db_rep1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge12" edge="1" parent="1" source="bouncer_read" target="db_rep2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge13" edge="1" parent="1" source="bouncer_read" target="db_rep3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge14" edge="1" parent="1" source="db_master" style="strokeColor=#FF9900;strokeWidth=2;entryX=0;entryY=0.5;" target="srv_backup">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge15" edge="1" parent="1" source="app_adf" style="strokeColor=#3399FF;strokeWidth=2;" target="sub_bouncer">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nmpjK0c5It3h05s2wSgy-8" parent="1" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 5&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.8&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="60" x="1010" y="760" as="geometry" />
-        </mxCell>
-        <mxCell id="nmpjK0c5It3h05s2wSgy-9" edge="1" parent="1" source="bouncer_read" target="nmpjK0c5It3h05s2wSgy-8">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--17" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--3" style="entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="XUB3ZXfbKG2ZV8yyBE7--23">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="730" y="590" as="sourcePoint" />
-            <mxPoint x="950" y="723" as="targetPoint" />
+            <mxPoint x="760" y="870" as="sourcePoint" />
+            <mxPoint x="980" y="1003" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nmpjK0c5It3h05s2wSgy-10" edge="1" parent="1" source="db_master" style="strokeColor=#FF33FF;strokeWidth=2;" target="db_report">
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--18" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--4" style="strokeColor=#FF33FF;strokeWidth=2;" target="XUB3ZXfbKG2ZV8yyBE7--9">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1010" y="100" as="sourcePoint" />
-            <mxPoint x="1240" y="100" as="targetPoint" />
+            <mxPoint x="1040" y="380" as="sourcePoint" />
+            <mxPoint x="1270" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--19" parent="1" style="swimlane;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#D5E8D4;" value="Aplicações" vertex="1">
+          <mxGeometry height="489" width="200" x="150" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--20" parent="XUB3ZXfbKG2ZV8yyBE7--19" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;labelBackgroundColor=#d5e8d4;labelBorderColor=#82b366;" value="Moodle EPP&#xa;(Azure App Service)" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="49" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--21" parent="XUB3ZXfbKG2ZV8yyBE7--19" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;labelBackgroundColor=#d5e8d4;labelBorderColor=#82b366;" value="Moodle AVAEFAPE&#xa;(Azure App Service)" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--22" parent="XUB3ZXfbKG2ZV8yyBE7--19" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;labelBackgroundColor=#d5e8d4;labelBorderColor=#82b366;" value="Moodle EXPANSÃO&#xa;(Azure App Service)" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="349" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--23" parent="1" style="swimlane;" value="Container" vertex="1">
+          <mxGeometry height="370" width="390" x="980" y="761" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--24" parent="XUB3ZXfbKG2ZV8yyBE7--23" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 1&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.5&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--25" parent="XUB3ZXfbKG2ZV8yyBE7--23" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 2&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.6&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="70" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--26" parent="XUB3ZXfbKG2ZV8yyBE7--23" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 3&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.7&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="260" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--27" parent="XUB3ZXfbKG2ZV8yyBE7--23" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;labelBackgroundColor=#dae8fc;labelBorderColor=#6c8ebf;" value="PostgreSQL Réplica 5&lt;br&gt;(Leitura)&lt;br&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;172.22.5.8&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="260" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="XUB3ZXfbKG2ZV8yyBE7--28" edge="1" parent="1" source="XUB3ZXfbKG2ZV8yyBE7--4" style="strokeColor=#3333FF;strokeWidth=1;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1100" y="560" as="sourcePoint" />
+            <mxPoint x="1170" y="760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
